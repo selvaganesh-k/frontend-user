@@ -1,0 +1,108 @@
+.content-page{
+    padding: 0 5% !important;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .content_box{
+    border: 1px solid #EAEAEA;
+    transition: border-color .3s ease-in-out;
+    line-height: 28px;
+  }
+  .content_box:hover{
+    border-color: black;
+  }
+  .ul-list{
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .ul-list li{
+    position: relative;
+    padding-left: 20px; 
+  }
+  .ul-list li::before{
+    content: '►'; 
+    position: absolute;
+    left: 0; 
+    color: #008000;
+  }
+  .offer-list{
+    position: relative;
+    margin: 30px 0 20px;
+    padding: 28px 17px;
+    border: 1px solid #008000;
+  }
+  .offer-list h4{
+    position: absolute;
+    top: -11px;
+    z-index: 10;
+    background-color: #fff;
+  }
+  .add-to-cart{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .add-to-cart .ATC-btn{
+    padding: 0 39px;
+    background-color: #5BA616;
+    color: #fff;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 55px;
+    transition: background-color .3s ease-in-out;
+  }
+
+  .ATC-btn:hover{
+    background-color: black;
+  }
+  .quantity {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    width: 90px;
+    height: 55px;
+    border: 1px solid black;
+  }
+  
+  .quantity input {
+    margin-right: auto;
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+  }
+  
+  .quantity .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid black;
+  }
+  
+  .quantity button {
+    width: 100%;
+    height: 26.5px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border: 1px solid black;
+    font-weight: 900;
+    transition: color .3s ease-in-out;
+  }
+
+  .quantity button:hover{
+    color: #5BA616;
+  }

@@ -1,0 +1,80 @@
+.banner-box{
+    font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  font-style: normal;
+  position: relative;
+  height: max-content;
+}
+#box-img{
+    height: 100%;
+    object-fit: contain;
+}
+.img-fluid{
+    height: 100% !important;
+}
+#banner-info h3{
+    font-size: 40px !important;
+}
+#banner-info p{
+    font-size: 24px !important;
+    letter-spacing: 10px;
+}
+#sub_link a{
+    text-decoration: none;
+    color: #fff;
+}
+#sub_link{
+    padding: 13px 56px;
+    background-color: black;
+    letter-spacing: 5px;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+#sub_link:hover{
+    background-color: #5ba616;
+    transition: background-color 0.5s ease-in-out;
+}
+@media (max-width:1024px){
+    #banner-info h3{
+        font-size: 30px !important;
+    }
+    #banner-info p{
+        font-size: 24px !important;
+        letter-spacing: 8px;
+    }
+    #banner-info{
+        width: 90% !important;
+    }
+    
+}
+
+@media (max-width:768px){
+    #banner-info h3{
+        font-size: 30px !important;
+    }
+    #banner-info p{
+        font-size: 24px !important;
+        letter-spacing: 10px;
+    }
+}
+
+@media (max-width:426px){
+    #banner-info h3{
+        font-size: 22px !important;
+        margin-bottom: 20px !important;
+    }
+    #banner-info p{
+        font-size: 20px !important;
+        letter-spacing: 8px;
+        margin: 20px 0px !important;
+    }
+    #banner-box{
+        height: 425px !important;
+        overflow: visible;
+    }
+    #sub_link{
+        padding: 12px 15px !important;
+    }
+}

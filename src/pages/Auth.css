@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+.login_register{
+    font-family: "Sofia Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 100px 0px;
+}
+.login_register label{
+    color: #212529;
+    font-size: 16px;
+    padding: 7px 15px;
+}
+.title_login{
+    font-size: 18px;
+    color: #212529;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 0 0 50px;
+}
+
+.login_register input{
+    outline: none;
+    border: none;
+    border-radius: 0 !important;
+    border-bottom: 1px solid black !important;
+    padding: 6px 12px;
+    width: 100%;
+}
+.login_register a{
+    text-decoration: none;
+    color: #212529;
+}
+.login_register a:hover{
+    color: #5ba616;
+}
+.login_register .btn{
+    font-size: 14px !important;
+    padding: 12px 40px !important;
+    border-radius: 0% !important;
+    border: none !important;
+    transition: background-color 0.3s ease-in-out;
+}
+.login_register .btn:hover{
+    background-color: #5ba616 !important;
+}

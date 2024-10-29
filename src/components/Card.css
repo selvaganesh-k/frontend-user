@@ -1,0 +1,111 @@
+.product-card {
+    width: 100%;
+    max-width: 350px;
+    margin: 20px;
+    border: none !important;
+    overflow: hidden;
+    position: relative;
+}
+.product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.product-card .card-body {
+    text-align: center;
+}
+.product-card .card-body p{
+    color: #5ba616;
+}
+.product-card:hover .card-buttons{
+    opacity: 1;
+}
+.card-buttons{
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.icon-list{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+}
+.icon-list li{
+    list-style: none;
+}
+.icon-btn, .icon-btn-1 {
+    background-color: #ffffff;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.icon-btn:hover{
+    background-color: #5ba616;
+    color: #ffffff;
+    border: 1px solid #5ba616;
+}
+.icon-btn-1:hover{
+    background-color: #a61616;
+    color: #ffffff;
+    border: 1px solid #a61616;
+}
+
+.icon-btn i, .icon-btn-1 i{
+    font-size: 18px !important;
+}
+.card-img-top{
+    cursor: pointer;
+}
+@media (max-width:1440px){
+    .product-card{
+        max-width: 250px !important;
+    }
+}
+@media (max-width:1300px){
+    .product-card{
+        max-width: 230px !important;
+    }
+}
+@media (max-width:768px){
+    .product-card{
+        max-width: 180px !important;
+    }
+}
+@media (max-width:426px){
+    .product-card{
+        max-width: 120px !important;
+    }
+    .card-text{
+        margin: 0;
+        font-size: 15px !important;
+    }
+}
+.card-text{
+    margin: 0;
+    font-size: 20px;
+}
+.card-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row;
+}
+#fullprice{
+    color: gray;
+    text-decoration:line-through;
+}

@@ -1,0 +1,107 @@
+#fruitCarousel{
+    font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.rounded-circle{
+    width: 10px !important;
+    height: 10px !important;
+
+}
+.carousel-item{
+    transition: opacity 0.3s ease-in-out !important;
+}
+.carousel-item.active{
+    display: block;
+    opacity: 0;
+}
+.carousel-item {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+@keyframes animateright {
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes animateleft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    70%{
+        opacity: 1;
+        transform: translateX(2%);
+    }
+    90%{
+        opacity: 1;
+        transform: translateX(-4%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes zoomOut {
+    from{
+        opacity: 0;
+        transform: scale(0,0);
+    }
+    to{
+        opacity: 1;
+    }
+}
+.carousel-caption{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+}
+.carousel-caption p{
+    font-size: 24px !important;
+    animation: animateright 1s ease-in-out;
+}
+.carousel-caption h5{
+    font-size: 18px !important;
+    animation: animateleft 1s ease-in-out;
+}
+.carousel-caption h1{
+    font-size: 80px !important;
+    animation: zoomOut 1s ease-in-out;
+}
+
+@media (max-width:1024px){
+    .carousel-caption h1{
+        font-size: 55px !important;
+    }
+    
+}
+
+@media (max-width:768px){
+    .carousel-caption h1{
+        font-size: 45px !important;
+    }
+}
+
+@media (max-width:426px){
+    .carousel-caption h1{
+        font-size: 30px !important;
+    }
+    .carousel-caption{
+       top: 30% !important;
+       left: 50%;
+       bottom: 0;
+       right: 0;
+    }
+}

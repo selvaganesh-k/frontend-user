@@ -1,0 +1,60 @@
+.box-img a img:hover{
+    transform: scale(1.1);
+    transition: transform 0.8s ease-in-out;
+}
+.box-img{
+    overflow: hidden;
+}
+.banner-box{
+    position: relative;
+}
+.banner-info{
+    cursor: pointer;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h3{
+        font-size: 36px;
+    }
+    p{
+        font-size: 12px;
+        letter-spacing: 5px;
+    }
+}
+.banner-info span{
+    position: relative;
+    width: max-content;
+}
+.sub_link::before{
+    content: '';
+    display: block;
+    height: 2px; 
+    width: 100%;
+    background: #000;
+    position: absolute; 
+    left: 0%; 
+    bottom: -5px;
+    transform: translateX(0%); 
+}
+
+.sub_link:hover::before {
+  animation: shrinkWidth 1s ease-in-out forwards;
+}
+
+@keyframes shrinkWidth {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}

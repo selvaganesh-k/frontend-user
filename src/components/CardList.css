@@ -1,0 +1,11 @@
+.product-list{
+    padding: 20px 5% !important;
+    width: 100%;
+}
+.product-list .product{
+    width: max-content;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;    
+}
